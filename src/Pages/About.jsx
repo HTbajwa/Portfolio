@@ -1,6 +1,7 @@
 import React from 'react'
 import { ReactTyped } from "react-typed";
 import { Experience, Skills } from '../data';
+import {motion} from 'framer-motion'
 
 import Footer from '../Components/Footer';
 const About = () => {
@@ -8,27 +9,39 @@ const About = () => {
 <section className='max-container'>
 <div>
  <h1 className='head-text'>
- Hello, I'm <span className='blue-gradient_text'>
- 
- <ReactTyped strings={["Hadia"]} typeSpeed={40}
- backSpeed={50}
- loop
- />
- </span>
+   About me
  </h1>
- <p className='pt-4'>
- A passionate web developer with a strong background in creating dynamic and responsive websites.
- </p>
+
+ <div className='pt-4  text-justify '>
+
+  <div className='border-l-2 pl-4 p-4 border-blue-500 bg-gradient-to-r from-blue-200 to-white shadow-md rounded-md '>
+
+
+I’m <strong>Hadia Tariq</strong>, a self-motivated web developer with a strong focus on building responsive, user-friendly applications using the <strong>MERN stack</strong>. My journey began with a curiosity for how websites work and quickly grew into a passion for crafting full-stack projects that are both functional and beautifully designed.
+
+<br />
+
+With hands-on experience in React, Node.js, Express, and MongoDB, I’ve built real-world applications that emphasize clean code, smooth UI, and performance. I’ve completed certifications in modern web technologies and continue to expand my skills every day. Whether I’m building an e-commerce store, designing reusable components, or learning new tools, I aim to create solutions that leave a lasting impact.
+</div>
+
+  </div>
+
 <h1 className='pt-8 font-bold md:text-4xl text-2xl'>
 My Skills
 </h1>
+<div className='w-full overflow-hidden'>
+<motion.div className='flex w-max gap-7'
+initial={{x:"0%"}}
+animate={{x:["0%","-50%"]}}
+transition={{repeat:Infinity,duration:10,ease:'linear'}}
 
 
 
 
 
-
-<div className='grid grid-cols-2 gap-7  md:grid-cols-7'>
+>
+  {[...Array(2)].map((_,index)=>(
+    <div className='flex gap-7' key={index}>
 {
   Skills.map((sk,i)=>(
   <div key={i}>
@@ -36,7 +49,7 @@ My Skills
   style={{ backgroundColor: sk.bgColor }}
   >
   <div className='flex items-center justify-center'> 
-<img src={sk.icon} alt="" className='w-[50px] h-[50px] '/>
+<img src={sk.icon} alt="" className='w-[100px] h-[50px] '/>
     
   </div>
   
@@ -46,7 +59,10 @@ My Skills
 
   ))
 }
+</div>
+  ))}
 
+</motion.div>
 </div>
 
 <h1 className='pt-20 font-bold md:text-4xl text-xl text-center'>

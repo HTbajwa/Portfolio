@@ -152,7 +152,7 @@ camera={{
   far: 1000,
 }}
 >
-  <Suspense fallback={<Loader />}>
+  <Suspense fallback={null}>
   <directionalLight position={[0, 0, 1]} intensity={2.5} />
           <ambientLight intensity={1} />
           <pointLight position={[5, 10, 0]} intensity={2} />
@@ -171,6 +171,7 @@ currentAnimation={currentAnimation}
 />
   </Suspense>
 </Canvas>
+<Loader />
 </div>
     </section>
   )

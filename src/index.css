@@ -11,6 +11,7 @@
 
 body {
   font-family: "Work Sans", sans-serif;
+ 
 }
 
 body:has(.card[data-color="blue"]:hover) {
@@ -24,6 +25,9 @@ body:has(.card[data-color="green"]:hover) {
 @layer utilities {
   .max-container {
     @apply max-w-5xl mx-auto sm:p-16 pb-12 !pt-[126px] px-8 min-h-[calc(100vh-80px)];
+  }
+  .max-container1 {
+    @apply max-w-5xl mx-auto sm:p-16 pb-12  px-8 min-h-[calc(100vh-80px)];
   }
 
   .head-text {

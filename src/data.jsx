@@ -3,20 +3,23 @@ import {
     css,
     
     html,
-    javascript,
-    
-    
-    
+    javascript, 
     react,
     
     tailwindcss,
     wordpress,
-    bootstrap
-  
+    bootstrap,
+    nodejs,
+    mongodb,
+    express,
+    github,
+    git,
+
   } from "./assets/icons";
 import{
     webdesigner,
     webdeveloper,
+    certificate4,
     Student,
     Freelancer,
     portfolio1,
@@ -61,12 +64,37 @@ import{
       bgColor: '#F9ACB1',
       text: 'Bootstrap',
       icon: bootstrap
-    }
+    },
+    // {
+    //   bgColor: '#F9ACB1',
+    //   text: 'Node Js',
+    //   icon: nodejs
+    // },
+    // {
+    //   bgColor: '#F9ACB1',
+    //   text: 'Mongo DB',
+    //   icon: mongodb
+    // },
+    // {
+    //   bgColor: '#F9ACB1',
+    //   text: 'Express',
+    //   icon: express
+  
+    {
+      bgColor: '#ffff',
+      text: 'Github',
+      icon: github
+    },
+    {
+      bgColor: '#FF6C37',
+      text: 'Git',
+      icon: git
+    },
   ];
   export const Experience=[
 
     {
- image:webdeveloper,
+ image:certificate4,
  text:"Web Developer",
  paragraph:"Began coding with HTML and CSS, gradually delving into JavaScript. My React portfolio reflects both my journey and evolving expertise."
     },
