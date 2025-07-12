@@ -30,9 +30,9 @@ return card.tags.includes(filter)
 <div>
 <div className='flex gap-4 pt-10 justify-center items-center'>
         <button className='btn1' onClick={()=>handlechange('All')}>All</button>
-        <button className='btn1'  onClick={()=>handlechange('Best')}>Best</button>
-        <button className='btn1'  onClick={()=>handlechange('Dynamic')}>Dynamic</button>
-        <button className='btn1'  onClick={()=>handlechange('Static')}>Static</button>
+        <button className='btn1'  onClick={()=>handlechange('Best')}>MERN Stack Project</button>
+        <button className='btn1'  onClick={()=>handlechange('Static')}>React Project</button>
+       
       </div>
    
 </div>
@@ -45,8 +45,10 @@ return card.tags.includes(filter)
 <div className='bg-white p-4 rounded-md md:w-full  ' key={i}>
       <img src={card.image} alt="" className='rounded-md md:w-full' />
       <div className='  flex items-center justify-center '>
-        <button className={`${card.tags=='Best' ? 'btn3 -mt-6' :'btn2  -mt-6 '}`}>
+        <button  className={`${card.tags=='Best' && 'Dynamic' ? 'btn3 -mt-6' :'btn2  -mt-6 '}`}>
+         <a target='_blank' href={card.liveLink}  rel="noopener noreferrer">
          {card.tags}
+         </a>
         </button>
       </div>
       <div className='pt-4'>

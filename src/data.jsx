@@ -17,11 +17,8 @@ import {
 
   } from "./assets/icons";
 import{
-    webdesigner,
-    
-    Student,
-    Freelancer,
-    portfolio1,
+
+   
     portfolio2,
     portfolio3,
     prtfolio4,
@@ -32,6 +29,11 @@ import certificate4 from "./assets/images/certificate4.png";
 import certificate3 from "./assets/images/certificate3.png";
 import certificate2 from "./assets/images/certificate2.png";
 import certificate1 from "./assets/images/certificate1.png";
+import refokus from "./assets/images/refokus.png";
+import ochiweb from "./assets/images/ochiweb.png";
+import clientpage from "./assets/images/clientpage.png";
+import adminpage from "./assets/images/adminpage.png";
+
 
   export const Skills = [
     {
@@ -127,39 +129,33 @@ import certificate1 from "./assets/images/certificate1.png";
   ];
   export const cards = [
     {
-      image: portfolio1,
-      title: 'Epic Legion',
-      description: 'Contributed to an animated website showcasing Minecraft modpacks. Collaborated with an amazing team of devs from a Discord server.',
-      tags: ['Best']
+      image: refokus,
+      title: 'Refokus Website UI',
+      description: 'Recreated the animated Refokus website using React, Tailwind CSS, and Framer Motion. Focused on smooth UI/UX and modern layouts. Deployed on Netlify.',
+      tags: ['Static'],
+      liveLink: 'https://illustrious-wisp-ecfb8f.netlify.app/' 
     },
     {
-      image: portfolio2,
-      title: 'Weather App',
-      description: 'Created a minimal weather app for learning APIs and charts. Overcame challenges in fetching images of countries.',
-      tags: ['Best']
+      image: ochiweb,
+      title: 'Ochi Website UI',
+      description: 'Built a responsive clone of the Ochi website using React and Tailwind CSS. Practiced advanced UI techniques like parallax effects and animated transitions. Hosted on Netlify.',
+      tags: ['Static'],
+      liveLink: 'https://comforting-pie-f57a87.netlify.app/' 
     },
     {
-      image: portfolio3,
-      title: 'Guess The Number',
-      description: 'Developed a JavaScript game where players guess a randomly generated number between 1 to 20. Inspired by a course and design by.',
-      tags: ['Dynamic']
+      image: clientpage,
+      title: 'Ecom Store – Client Dashboard',
+      description: 'Developed the client side of a MERN-based e-commerce store with user authentication, product browsing, cart, and order functionality.',
+      tags: ['Best'],
+      liveLink: 'https://github.com/HTbajwa/mern-3d-ecommerce-store' 
     },
     {
-      image: prtfolio4,
-      title: 'Pick Game',
-      description: 'Created a 2-player JavaScript game where the goal is to reach 100 points by rolling dice. Be cautious, rolling a 1.',
-      tags: ['Dynamic']
-    },
-    {
-      image: portfolio5,
-      title: 'Pick Game',
-      description: 'Created a 2-player JavaScript game where the goal is to reach 100 points by rolling dice. Be cautious, rolling a 1.',
-      tags: ['Static']
-    },
-    {
-      image: potfolio6,
-      title: 'Pick Game',
-      description: 'Created a 2-player JavaScript game where the goal is to reach 100 points by rolling dice. Be cautious, rolling a 1.',
-      tags: ['Static']
+      image: adminpage,
+      title: 'Ecom Store – Admin Dashboard',
+      description: 'Designed and implemented an admin dashboard to manage users, products, and orders with secure routes and dynamic UI components.',
+      tags: ['Best'],
+      liveLink: 'https://github.com/HTbajwa/mern-3d-ecommerce-store' 
     }
+    
+   
   ];
