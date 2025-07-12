@@ -81,31 +81,11 @@ Good Business
 </h1>
 
 
+<h1 className='pt-8 font-bold md:text-4xl text-2xl'>
+Certificates
+</h1>
 
 <div className='grid grid-cols-1 gap-7  md:grid-cols-4 pt-10'>
-{/* <div>
-<div className="rounded-full  w-full mt-8 flex items-center justify-center cursor-pointer bg-black-500">
-
-<div className='flex w-full '> 
-<img src={webdesigner} alt="" className=' w-full   rounded-md ' />
-    
-  </div>
- 
-</div>
-<div className=' font-bold flex items-center justify-center pt-4 pb-4 '>
-<h1>
-Web Developer
-</h1>
-  </div> 
-
-  <div className=' flex items-center justify-center text-sm text-justify '>
-<p>
-Began coding with HTML and CSS, gradually delving into JavaScript. My React portfolio reflects both my journey and evolving expertise.
-</p>
-  </div> 
-  </div> */}
-
-
 {
   Experience.map((exp,i)=>(
 <div key={i}>

@@ -18,8 +18,7 @@ import {
   } from "./assets/icons";
 import{
     webdesigner,
-    webdeveloper,
-    certificate4,
+    
     Student,
     Freelancer,
     portfolio1,
@@ -29,6 +28,11 @@ import{
     portfolio5,
     potfolio6
 } from "./assets/images/index.js"
+import certificate4 from "./assets/images/certificate4.png";
+import certificate3 from "./assets/images/certificate3.png";
+import certificate2 from "./assets/images/certificate2.png";
+import certificate1 from "./assets/images/certificate1.png";
+
   export const Skills = [
     {
       bgColor: '#3297FE',
@@ -93,26 +97,33 @@ import{
   ];
   export const Experience=[
 
-    {
- image:certificate4,
- text:"Web Developer",
- paragraph:"Began coding with HTML and CSS, gradually delving into JavaScript. My React portfolio reflects both my journey and evolving expertise."
-    },
-    {
-        image:Student,
-        text:"Student",
-        paragraph:"Started coding journey at my BS IT degree. And this portfolio reflects the dedication and passion invested during those days."
-           },
-           {
-            image:webdesigner,
-            text:"Web Designer",
-            paragraph:"Passionate about crafting modern UI/UX experiences. Proficient in Figma and other design tools, I aim to create visually appealing interfaces."
-               },
-               {
-                image:Freelancer,
-                text:"Freelancer",
-                paragraph:"Ventured into freelancing on my first wordpress project. This marked the start of my earning journey in the coding realm."
-                   }
+    
+      {
+        image: certificate4,
+        text: "ReactJs Mastery Course",
+        paragraph:
+          "Completed an advanced React.js course focused on component-driven development, hooks, state management, and building scalable web applications.",
+      },
+      {
+        image: certificate3,
+        text: "Erozgar Web Development",
+        paragraph:
+          "Successfully completed the E-Rozgaar web development training program, covering frontend and backend technologies essential for freelance and industry-ready skills.",
+      },
+      {
+        image: certificate2,
+        text: "SimpliLearn Database",
+        paragraph:
+          "Completed a database fundamentals course by SimpliLearn, gaining hands-on experience in SQL, relational databases, and data modeling techniques.",
+      },
+      {
+        image: certificate1,
+        text: "WordPress Website Completion",
+        paragraph:
+          "Developed and deployed a full WordPress website, marking the beginning of my freelancing journey and first practical experience with CMS-based development.",
+      },
+
+    
   ];
   export const cards = [
     {
