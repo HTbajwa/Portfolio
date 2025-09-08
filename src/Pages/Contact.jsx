@@ -5,6 +5,7 @@ import { Fox } from '../models/fox';
 import { Loader } from '@react-three/drei';
 import useAlert from '../Hooks/useAlert';
 import Alert from '../Components/Alert';
+import Footer from '../Components/Footer';
 
 const Contact = () => {
   const formref=useRef(null)
@@ -73,7 +74,12 @@ message:form.message
 });
  }
   return (
-    <section className='relative flex md:flex-row flex-col max-container'>
+    <>
+    
+    
+    
+   
+    <section id='contact' className='relative flex md:flex-row flex-col max-container '>
 
     
 
@@ -174,7 +180,12 @@ currentAnimation={currentAnimation}
 </Canvas>
 <Loader />
 </div>
+
     </section>
+    {/* <div className='pt-10 pb-10'>
+<Footer />
+</div> */}
+ </>
   )
 }
 

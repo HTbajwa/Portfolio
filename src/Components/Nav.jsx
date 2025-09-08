@@ -24,7 +24,7 @@ export default function Navbar() {
           {/* logo / name */}
           <a
             href="#home"
-            className="text-3xl font-extrabold italic text-emerald-400 font-[Dancing_Script] select-none"
+            className="text-3xl italic text-emerald-400  select-none"
           >
             Hadia
           </a>
@@ -34,7 +34,7 @@ export default function Navbar() {
             {navItems.map((item) => (
               <li key={item} className="relative">
                 <a
-                  href={`#${item.toLowerCase()}`}
+                href={`#${item.toLowerCase()}`}
                   onClick={() => setActive(item)}
                   className={`transition-colors ${
                     active === item ? "text-emerald-400" : "text-gray-200"

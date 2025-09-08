@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { FiMenu } from "react-icons/fi";
-import { NavLink } from 'react-router-dom'
+
 import { MdClose } from "react-icons/md";
 
 const Navbar = () => {
@@ -19,27 +19,27 @@ const navitems=[
       <div className='bg-gradient-to-r  from-[#00c6ff] to-[#0072ff] p-[2px] rounded-full shadow-[0_0_18px_2px_rgba(0,198,255,0.45)]'>
 
 <div className='flex items-center px-5 py-3 md:px-10 gap-x-48 justify-between bg-white rounded-full'>
-      <NavLink to={"/"} className="w-10 h-10 rounded-lg bg-white items-center 
+      <a href='#Home' className="w-10 h-10 rounded-lg bg-white items-center 
 
 flex justify-center font-bold shadow-md
 ">
 <p className='blue-gradient_text'>HT</p>
 
-</NavLink>
+</a>
 <nav className='md:flex text-lg gap-7 hidden font-medium'>
 
 <ul className='md:flex hidden gap-6'>
 {
   navitems.map((items)=>
   <li key={items} className='relative'>
-    <NavLink
-        to={items === "Home" ? "/" : `/${items.toLowerCase()}`}
+    <a
+        href={`#${items.toLowerCase()}`}
   onClick={(e) => {
     
     setactive(items)}}
 className={`${active===items ?"text-blue-500" : "text-black" } hover:text-blue-500`}
     
-    >{items}</NavLink>
+    >{items}</a>
 {
   active===items &&(
     <span className="absolute bg-blue-500 -translate-x-1/2 w-1 h-1 mt-[2px] left-1/2 top-full rounded-full"></span>
@@ -97,8 +97,8 @@ className={`${active===items ?"text-blue-500" : "text-black" } hover:text-blue-5
 {
   navitems.map((items)=>
   <li key={items} className='relative'>
-    <NavLink
-        to={items === "Home" ? "/" : `/${items.toLowerCase()}`}
+    <a
+      href={`#${items.toLowerCase()}`}
   onClick={(e) => {
     
     setactive(items)
@@ -106,7 +106,7 @@ className={`${active===items ?"text-blue-500" : "text-black" } hover:text-blue-5
   }}
 className={`${active===items ?"text-blue-500" : "text-black" } hover:text-blue-500`}
     
-    >{items}</NavLink>
+    >{items}</a>
 {
   active===items &&(
     <span className="absolute bg-blue-500 -translate-x-1/2 w-1 h-1 mt-[2px] left-1/2 top-full rounded-full"></span>

@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <section>
         <hr />
-        <div className='flex md:flex-row pt-10 justify-between flex-col '>
+        <div className='flex md:flex-row pt-10  mx-auto mx-w-5xl px-8 justify-between  flex-col '>
 
         <div >
 <h1 className='md:text-3xl text-xl font-extrabold'>Have a project in mind?</h1>
@@ -15,7 +15,7 @@ const Footer = () => {
 <button
 
         className="btn "
-        ><Link to={"/contact"}>Contact me</Link></button>
+        ><a href="#contact">Contact me</a></button>
 
 
 </div>

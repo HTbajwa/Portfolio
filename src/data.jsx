@@ -33,8 +33,8 @@ import refokus from "./assets/images/refokus.png";
 import ochiweb from "./assets/images/ochiweb.png";
 import clientpage from "./assets/images/clientpage.png";
 import adminpage from "./assets/images/adminpage.png";
-
-
+import Movie from "./assets/images/Movie.png"
+import K72 from "./assets/images/K72.png"
   export const Skills = [
     {
       bgColor: '#3297FE',
@@ -155,7 +155,22 @@ import adminpage from "./assets/images/adminpage.png";
       description: 'Designed and implemented an admin dashboard to manage users, products, and orders with secure routes and dynamic UI components.',
       tags: ['Best'],
       liveLink: 'https://github.com/HTbajwa/mern-3d-ecommerce-store' 
+    },
+    {
+      image: Movie,
+      title: 'Movie App',
+      description: 'A React-based web app to browse, search, and discover movies. It features a responsive UI and fetches data from a public movie API, allowing users to view movie details and explore  films.',
+      tags: ['Best'],
+      liveLink: 'https://shiny-wisp-1e5545.netlify.app/' 
+    },
+     {
+      image: K72,
+      title: 'K72 Inspired UI',
+      description: 'A modern website built with React, TailwindCSS, and GSAP, featuring smooth animations (stairs effect, transitions) and a clean UI/UX design.Deployed on Netlify.',
+      tags: ['Static'],
+      liveLink: 'https://k72ui.netlify.app/' 
     }
+
     
    
   ];

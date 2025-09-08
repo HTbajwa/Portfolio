@@ -2,38 +2,56 @@ import React from 'react'
 import { ReactTyped } from 'react-typed'
 import About from "./About"
 import Projects from "./Projects"
-import { NavLink } from 'react-router-dom'
+
 import {FaEnvelope, FaGithub, FaLinkedin} from "react-icons/fa"
 import { motion } from 'framer-motion'
 import Footer from '../Components/Footer'
+import Contact from './Contact'
 const Home = () => {
   return (
-    <section className='max-container flex flex-col'>
+    <section id='home' className='max-container1  items-center flex flex-col'>
+<div className='flex items-center flex-col '>
+  <div className="w-56 h-56 p-[2px] bg-gradient-to-r from-[#00c6ff] to-[#0072ff] rounded-full shadow-[0_0_18px_2px_rgba(0,198,255,0.45)] flex items-center justify-center overflow-hidden">
+  <img src="/src/assets/images/avater.webp" alt="" className="w-full h-full object-cover rounded-full" />
+</div>
+<div>
+   <div className=''>
+                     
 
-         <div className=''>
           <h1 className='head-text'>Hello, I'm   </h1>
+
+
           </div>
           <h1 className='blue-gradient_text head-text'>
               <ReactTyped strings={["Hadia Tariq","Web Developer","ReactJS Developer"]}
               typeSpeed={40} backSpeed={50} loop />
             </h1>
-        
+       
       <br />
 
          <div>
           <p>
           A React Developer who loves turning designs into fast, functional web applications.
+          
           </p>
           <br />
          </div>
+</div>
 
-<div className='flex gap-4'>
-         <NavLink to={'/project'} className='btn3 '>
+
+
+</div>
+        
+
+
+<div className='flex   gap-4'>
+ 
+         <a href='#project' className='btn3 '>
             View Projects
-          </NavLink>
-          <NavLink to={'/contact'} className='btn1'>
+          </a>
+          <a href='#contact' className='btn1'>
             Hire me
-          </NavLink>
+          </a>
           
      <span className='border-l-2 lg:flex hidden'></span>
         
@@ -74,13 +92,7 @@ whileTap={{ scale: 0.95 }}
       
 </div>
 </div>
-{/* <div>
-  <About />
-  <Projects />
-</div> */}
-<div className='pt-10 pb-10'>
-<Footer />
-</div>
+
 
     </section>
   )

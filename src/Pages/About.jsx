@@ -6,7 +6,7 @@ import {motion} from 'framer-motion'
 import Footer from '../Components/Footer';
 const About = () => {
   return (
-<section className='max-container'>
+<section id='about' className='max-container '>
 <div>
  <h1 className='head-text'>
    About me
@@ -125,9 +125,9 @@ Certificates
 
 
 </div>
-<div className='pt-10 pb-10'>
+{/* <div className='pt-10 pb-10'>
 <Footer />
-</div>
+</div> */}
 
 </section>
   )

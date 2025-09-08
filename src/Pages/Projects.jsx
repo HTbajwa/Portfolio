@@ -18,7 +18,7 @@ return card.tags.includes(filter)
 )
 
   return (
-    <section className='max-container'>
+    <section id='project' className='max-container '>
 <div>
  <h1 className='head-text'>
  My  <span className='blue-gradient_text'>Projects</span>
@@ -45,7 +45,7 @@ return card.tags.includes(filter)
 <div className='bg-white p-4 rounded-md md:w-full  ' key={i}>
       <img src={card.image} alt="" className='rounded-md md:w-full' />
       <div className='  flex items-center justify-center '>
-        <button  className={`${card.tags=='Best' && 'Dynamic' ? 'btn3 -mt-6' :'btn2  -mt-6 '}`}>
+        <button  className={`${card.tags=='Best' && 'Dynamic' ? 'btn3 -mt-6' :'btn3  -mt-6 '}`}>
          <a target='_blank' href={card.liveLink}  rel="noopener noreferrer">
          {card.tags}
          </a>
@@ -73,9 +73,9 @@ return card.tags.includes(filter)
   
 </div>
 
-<div className='pt-10 pb-10'>
+{/* <div className='pt-10 pb-10'>
 <Footer />
-</div>
+</div> */}
 
 
  </section>
