@@ -2,6 +2,7 @@ import React from 'react'
 import { ReactTyped } from 'react-typed'
 import About from "./About"
 import Projects from "./Projects"
+import avater from "../assets/images/avater.webp"
 
 import {FaEnvelope, FaGithub, FaLinkedin} from "react-icons/fa"
 import { motion } from 'framer-motion'
@@ -12,7 +13,7 @@ const Home = () => {
     <section id='home' className='max-container1  items-center flex flex-col'>
 <div className='flex items-center flex-col '>
   <div className="w-56 h-56 p-[2px] bg-gradient-to-r from-[#00c6ff] to-[#0072ff] rounded-full shadow-[0_0_18px_2px_rgba(0,198,255,0.45)] flex items-center justify-center overflow-hidden">
-  <img src="/src/assets/images/avater.webp" alt="" className="w-full h-full object-cover rounded-full" />
+  <img src={avater} alt="" className="w-full h-full object-cover rounded-full" />
 </div>
 <div>
    <div className=''>
