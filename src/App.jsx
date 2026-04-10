@@ -9,16 +9,16 @@ import Portfolio from './Pages/dummy';
 
 const App = () => {
   return (
-    <main className=''>
-      {/* <Navbar />
+    <main>
+      <Navbar />
       <Home />
       <About />
       <Projects />
-      <Contact /> */}
-      <Portfolio />
-       {/* <div className='pt-10  pb-10'>
+      <Contact />
+   
+       <div className='pt-10  pb-10'>
 <Footer />
-</div>  */}
+</div> 
     </main>
   );
 };
