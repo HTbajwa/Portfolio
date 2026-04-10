@@ -5,18 +5,20 @@ import About from './Pages/About';
 import Projects from './Pages/Projects';
 import Contact from './Pages/Contact';
 import Footer from './Components/Footer';
+import Portfolio from './Pages/dummy';
 
 const App = () => {
   return (
-    <main className='bg-slate-300/20'>
-      <Navbar />
+    <main className=''>
+      {/* <Navbar />
       <Home />
       <About />
       <Projects />
-      <Contact />
-       <div className='pt-10  pb-10'>
+      <Contact /> */}
+      <Portfolio />
+       {/* <div className='pt-10  pb-10'>
 <Footer />
-</div> 
+</div>  */}
     </main>
   );
 };
