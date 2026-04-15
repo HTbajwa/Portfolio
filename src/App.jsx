@@ -10,6 +10,7 @@ import Portfolio from './Pages/dummy';
 const App = () => {
   return (
     <main>
+      hello
       <Navbar />
       <Home />
       <About />
